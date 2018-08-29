@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'net.lustenauer'
+version '1.0.0'
+
+sourceCompatibility = 1.6
+
+ext {
+    gdxVersion = '1.9.8'
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "com.badlogicgames.gdx:gdx:$gdxVersion"
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
